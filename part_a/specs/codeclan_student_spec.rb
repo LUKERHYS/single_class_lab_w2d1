@@ -25,11 +25,13 @@ def test_new_student_cohort
 end
 
 def test_student_can_talk
-  assert_equal("I am in E37!", @student1.student_can_talk("I am in E37!"))
+  speak = @student1.student_can_talk("I am in E37!")
+  assert_equal("I am in E37!", speak)
 end
 
 def test_student_fav_lang
-  assert_equal("My favourite programming language is Ruby!", @student1.student_fav_lang("Ruby"))
+  fav_lang = @student1.student_fav_lang("Ruby")
+  assert_equal("My favourite programming language is Ruby!", fav_lang)
 end
 
 end
